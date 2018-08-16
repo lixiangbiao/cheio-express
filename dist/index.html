@@ -1,0 +1,51 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>WebSocket Echo Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+
+<body >
+    <input type="text"/><p>1.这个地方输入你要的收集的这个页面,比如http://123.127.80.6/sfda/ShowJSYQAction.do</p>
+    <P>第2.点击收集</P>
+    <p>第3.导出excel</p>
+    <button class="test">收集</button>
+
+    <button class="excel">导出excel</button>
+</body>
+
+<script src="./jquery-3.2.1.min.js"></script>
+<script>
+    $(function () {
+
+    })
+
+    $(".test").on('click',function(){
+        $.ajax({
+				url:'/file',
+				type:'GET',
+				dataType:'json',
+				success:function(data){	
+
+                }
+			})
+    })
+
+
+    $(".excel").on('click',function(){
+        $.ajax({
+				url:'/excel',
+				type:'GET',
+				dataType:'json',
+				success:function(data){	
+                    console.log(data);
+                    if(data.state ==1){
+                        alert('导出excel成功')
+                    }else{
+                        alert('导出excel失败')
+                    }
+                }
+			})
+    })
+</script>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "cheio-express",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cheerio": "^1.0.0-rc.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "iconv-lite": "^0.4.19",
+    "morgan": "~1.8.1",
+    "node-uuid": "^1.4.8",
+    "node-xlsx": "^0.11.2",
+    "request": "^2.83.0",
+    "serve-favicon": "~2.4.2",
+    "superagent": "^3.8.1",
+    "ws": "^3.3.3"
+  }
+}
